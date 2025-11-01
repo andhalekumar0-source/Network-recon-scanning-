@@ -1,0 +1,6 @@
+# Run Nmap host directory 
+sudo nmap -sn 192.168.56.0/24 -oA scans/hostdiscovery
+
+# Run Service Scan (ON A SELECTED HODT)
+  sudo nmap -sV -sC -p- -T4 -oA scans/full_service_192.168.56.50 192.168.56.50
+  
